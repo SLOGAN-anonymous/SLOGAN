@@ -39,19 +39,21 @@ We release pretrained model weights and training log files of CIFAR-2 (7:3) and 
 
 You can download pretrained model files from [This URL](https://drive.google.com/drive/folders/1WAFfHpXM-YdywH2PkZyptv9jetcINsFk?usp=sharing) and put them into './logs/cifar2/3/pretrained/' for CIFAR-2 (7:3), and './logs/cifar2/5/pretrained/' for CIFAR-2 (5:5)
 
-Training logs and generated images of pretrained models can be viewed as follows:
+Training logs and generated images of pretrained models can be viewed using the following command:
     
     tensorboard --logdir ./logs/cifar2/"3 or 5"/pretrained
 
-Pretrained model weights can be loaded and used to calculate evaluation metrics as follows:
+Pretrained model weights can be loaded and used to calculate evaluation metrics using the following command:
 
     python slogan_cifar2.py --gpu "GPU_NUMBER" --pretrained ./logs/cifar2/"3 or 5"/pretrained/model-100000
 
 
 ### Model training
 
-SLOGAN can be trained with the CIFAR-2 (7:3) dataset using following commands:
+SLOGAN can be trained with the CIFAR-2 (7:3) dataset using the following command:
 
     python slogan_cifar2.py --gpu "GPU_NUMBER" --ratio_plane 3
    
-Log files are stored in './logs/cifar2/"RATIO_PLANE"', and training logs and generated images can be viewed using Tensorboard.
+Log files are stored in './logs/cifar2/"RATIO_PLANE"', and training logs and generated images can be viewed using Tensorboard:
+
+    tensorboard --logdir ./logs/slogan2/"RATIO_PLANE"
