@@ -54,6 +54,4 @@ SLOGAN can be trained with the CIFAR-2 (7:3) dataset using the following command
 
     python slogan_cifar2.py --gpu "GPU_NUMBER" --ratio_plane 3
    
-Log files are stored in './logs/cifar2/"RATIO_PLANE"', and training logs and generated images can be viewed using Tensorboard:
-
-    tensorboard --logdir ./logs/slogan2/"RATIO_PLANE"
+Log files are stored in './logs/cifar2/"RATIO_PLANE"', and training logs and generated images can be viewed using Tensorboard.
